@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidar Bem - Dicas de Saúde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fundo Tridimensional com Objetos Fluindo/Flutuando -->
+    <div class="bg-3d-container" aria-hidden="true">
+        <!-- Partículas de Luz no Fundo -->
+        <div class="particula p1"></div>
+        <div class="particula p2"></div>
+        <div class="particula p3"></div>
+        <div class="particula p4"></div>
+        <div class="particula p5"></div>
+
+        <!-- Objeto 3D 1: Cubo Giratório -->
+        <div class="objeto-3d cubo-3d">
+            <div class="face frente"></div>
+            <div class="face tras"></div>
+            <div class="face esquerda"></div>
+            <div class="face direita"></div>
+            <div class="face topo"></div>
+            <div class="face base"></div>
+        </div>
+
+        <!-- Objeto 3D 2: Esfera com Brilho Volumétrico -->
+        <div class="objeto-3d esfera-3d e1"></div>
+        <div class="objeto-3d esfera-3d e2"></div>
+
+        <!-- Objeto 3D 3: Anéis em Órbita 3D -->
+        <div class="objeto-3d anel-3d a1"></div>
+        <div class="objeto-3d anel-3d a2"></div>
+        <div class="objeto-3d anel-3d a3"></div>
+    </div>
+
+    <!-- Conteúdo da Página -->
+    <header class="cabecalho">
+        <h1>Cuidar Bem</h1>
+        <p>Dicas simples para o seu dia a dia</p>
+    </header>
+
+    <main class="conteudo">
+        <!-- Card 1 -->
+        <a href="#modal-agua" class="cartao-link">
+            <section class="cartao">
+                <h2>💧 Beba Água</h2>
+                <p>Tome ao menos um copo de água a cada duas horas...</p>
+                <span class="dica-clique">Clique para ver mais</span>
+            </section>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="#modal-sol" class="cartao-link">
+            <section class="cartao">
+                <h2>☀️ Tome Sol</h2>
+                <p>Procure tomar 15 minutos de sol pela manhã...</p>
+                <span class="dica-clique">Clique para ver mais</span>
+            </section>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="#modal-caminhada" class="cartao-link">
+            <section class="cartao">
+                <h2>👟 Caminhada Leve</h2>
+                <p>Faça uma caminhada curta em local plano...</p>
+                <span class="dica-clique">Clique para ver mais</span>
+            </section>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="#modal-remedios" class="cartao-link">
+            <section class="cartao">
+                <h2>💊 Remédios no Horário</h2>
+                <p>Mantenha seus medicamentos organizados...</p>
+                <span class="dica-clique">Clique para ver mais</span>
+            </section>
+        </a>
+    </main>
+
+    <!-- Estruturas dos Modais (Sobreposição) -->
+    <div id="modal-agua" class="overlay">
+        <div class="modal">
+            <a href="#" class="fechar" aria-label="Fechar modal">&times;</a>
+            <h2>💧 Beba Água</h2>
+            <p>Tome ao menos um copo de água a cada duas horas, mesmo sem sentir sede. A hidratação mantém o corpo forte e a mente alerta.</p>
+        </div>
+    </div>
+
+    <div id="modal-sol" class="overlay">
+        <div class="modal">
+            <a href="#" class="fechar" aria-label="Fechar modal">&times;</a>
+            <h2>☀️ Tome Sol</h2>
+            <p>Procure tomar 15 minutos de sol pela manhã. Isso ajuda o seu corpo a produzir Vitamina D e fortalece os ossos.</p>
+        </div>
+    </div>
+
+    <div id="modal-caminhada" class="overlay">
+        <div class="modal">
+            <a href="#" class="fechar" aria-label="Fechar modal">&times;</a>
+            <h2>👟 Caminhada Leve</h2>
+            <p>Faça uma caminhada curta em local plano. Movimentar o corpo melhora a circulação e fortalece as pernas.</p>
+        </div>
+    </div>
+
+    <div id="modal-remedios" class="overlay">
+        <div class="modal">
+            <a href="#" class="fechar" aria-label="Fechar modal">&times;</a>
+            <h2>💊 Remédios no Horário</h2>
+            <p>Mantenha seus medicamentos organizados por dia e horário para evitar esquecimentos.</p>
+        </div>
+    </div>
+
+    <!-- Modal de Emergência (substitui o alert básico) -->
+    <div id="modal-ajuda" class="overlay">
+        <div class="modal modal-emergencia">
+            <a href="#" class="fechar" aria-label="Fechar modal">&times;</a>
+            <h2>📞 Pedindo Ajuda...</h2>
+            <p>Ligando para o seu contato de emergência e enviando sua localização atual.</p>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <a href="#modal-ajuda" class="botao-ajuda">
+            📞 Pedir Ajuda
+        </a>
+    </footer>
+
+</body>
+</html>
